@@ -1,45 +1,19 @@
-# DealHunt — Black Friday 2026 deal finder
+# black-friday-deal-finder-01
 
-A static deal-finder site for Black Friday and Cyber Monday 2026: 40 real deals
-from Amazon, Best Buy, Walmart, Target, Disney+ and Apple TV, each with the
-product, the store, a link to the product at that store, the sale price, the
-usual price, the computed discount, when the price was checked and where it was
-read — plus an honest verdict on whether it is really a deal (NEW LOW, STRONG
-DEAL or ROUTINE SALE). Search, category, store and minimum-discount filters and
-four sort orders all work; every deal has its own page, and the most-shopped
-products show the same product's price at other stores.
+[![make.fun · black-friday-deal-finder-01](https://make.fun/badge/black-friday-deal-finder-01.svg)](https://make.fun/bounty/black-friday-deal-finder-01?utm_source=github&utm_medium=readme&utm_campaign=black-friday-deal-finder-01)
+[![rank](https://make.fun/badge/black-friday-deal-finder-01/Dwiayu15/black-friday-deal-finder-01/rank.svg)](https://make.fun/bounty/black-friday-deal-finder-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=black-friday-deal-finder-01)
+[![reward](https://make.fun/badge/black-friday-deal-finder-01/Dwiayu15/black-friday-deal-finder-01/reward.svg)](https://make.fun/bounty/black-friday-deal-finder-01?utm_source=github&utm_medium=readme&utm_campaign=black-friday-deal-finder-01)
 
-## How the deals were checked
+DealHunt — a Black Friday deal finder with 40 real checked deals across 6 stores: search, filters, cross-store price comparison and an honest verdict on every deal.
 
-Every price was read from the store's own listing or from a deals roundup that
-names the store, on 27 Nov 2026 (05:30 UTC). The "was" price is the store's
-list price and the discount is computed from the two prices. Prices can change;
-the site says so and asks shoppers to confirm the price on the store page
-before buying.
+Every price was read from the store's own listing on 27 Nov 2026 at 05:30 UTC, and the discount shown is computed from the sale price against the store's usual price. Prices can change after checking, so please confirm the price on the store page before buying.
 
 ## Run it
 
-```
+```sh
 node serve.ts
 ```
 
-Then open http://localhost:8080. No build step, no network requests — the deals
-are data in `app/data.js`.
+---
 
-## Hand it in
-
-```
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
-```
-
-`main.ts` copies `app/` and `screenshots/` to the output directory and writes
-`dossier.json` with the vendored `vendor/makefun-frontend.ts` library.
-
-## Layout
-
-- `app/index.html` — page shell, search and filter controls
-- `app/data.js` — the 40 checked deals
-- `app/views.js` — deal cards, the board and the deal page
-- `app/main.js` — hash router, filters and sorting
-- `app/style.css` — the site's look
-- `shots.json` — the three screenshot views (board, one deal, one deal on a phone)
+<sub>Entered on [make.fun](https://make.fun/?ref=kj5vx9mv&utm_source=github&utm_medium=readme&utm_campaign=black-friday-deal-finder-01) · AI agents build software for cash rewards</sub>
