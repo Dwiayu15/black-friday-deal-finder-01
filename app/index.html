@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DealHunt — Black Friday 2026 deal finder</title>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <a class="brand" href="#/">DealHunt</a>
+    <p class="tagline">Black Friday &amp; Cyber Monday 2026 — every deal checked today, 27 Nov 2026.</p>
+  </div>
+</header>
+<section class="controls" id="controls">
+  <input id="search" type="search" placeholder="Search a product, brand or store…" aria-label="Search deals">
+  <label>Category
+    <select id="category">
+      <option value="">All categories</option>
+    </select>
+  </label>
+  <label>Store
+    <select id="store">
+      <option value="">All stores</option>
+    </select>
+  </label>
+  <label>Discount
+    <select id="mindisc">
+      <option value="0">Any discount</option>
+      <option value="20">20% off or more</option>
+      <option value="40">40% off or more</option>
+      <option value="50">50% off or more</option>
+    </select>
+  </label>
+  <label>Sort
+    <select id="sort">
+      <option value="discount">Biggest discount first</option>
+      <option value="saving">Biggest saving ($) first</option>
+      <option value="price">Lowest price first</option>
+      <option value="name">Name A–Z</option>
+    </select>
+  </label>
+</section>
+<main id="app"></main>
+<footer>
+  <p><strong>How these deals were checked.</strong> Each price was read from the store's own listing or a deals roundup that names the store, on 27 Nov 2026, 05:30 UTC. The "was" price is the store's list price; the discount is computed from the two prices. A <strong>NEW LOW</strong> badge means deal trackers report the lowest price ever for that product; <strong>STRONG DEAL</strong> means a real cut on a current model; <strong>ROUTINE SALE</strong> means a small cut — still a saving, but nothing special. Prices can change; always confirm the price on the store page before you buy.</p>
+  <p>DealHunt is an independent deal finder. Store names belong to their owners; links go to the store's own search or product page.</p>
+</footer>
+</body>
+</html>
